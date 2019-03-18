@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/Vytas88/traveler_website/issues"
   },
-  "homepage": "https://github.com/Vytas88/traveler_website#readme"
+  "homepage": "https://github.com/Vytas88/traveler_website#readme",
+  "devDependencies": {
+    "chart.js": "^2.7.3",
+    "grunt": "^1.0.3",
+    "grunt-assemble": "^0.6.3",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-svg-sprite": "^1.5.0"
+  },
+  "dependencies": {
+    "hbs": "^4.0.3"
+  }
 }

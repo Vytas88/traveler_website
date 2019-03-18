@@ -1,0 +1,66 @@
+.svg-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.container-fluid {
+  background-image: url(web\assets\images\phiphi.jpg);
+}
+
+body {
+  margin: 0;
+  background: white;
+  font: normal normal normal 13px/1.4em 'open sans',sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+.topbar .nav-bar {
+  height: 82px;
+  background: #D3D3D3;
+  position: relative;
+}
+.topbar .nav-bar--left {
+  width: 600px;
+  text-align: center;
+  float: left;
+}
+.topbar .nav-bar--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  justify-content: center;
+}
+.topbar .nav-bar__lists {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  line-height: 68px;
+}
+.topbar .nav-bar__lists li {
+  margin: 0px 8px;
+}
+.topbar .nav-bar__lists__link {
+  text-decoration: none;
+  color: #80898e;
+}
