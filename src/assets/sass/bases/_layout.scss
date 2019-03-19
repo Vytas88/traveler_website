@@ -1,3 +1,21 @@
 .container-fluid{
-  background-image: url(web\assets\images\phiphi.jpg);
+  padding: 0;
+  .bg_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bg_image_title{
+    color: white;
+    text-align: center;
+    h2{
+      padding: 20px 0px;
+    }
+  }
+    height: 800px;
+    background-image: url(../images/bg_image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 }
