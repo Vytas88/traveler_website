@@ -2,6 +2,7 @@
 @import 'icons.scss';
 @import 'layout.scss';
 body{
+  overflow-y: auto;
   margin: 0;
   background: $default-bg;
   font: normal normal normal 13px/1.4em 'open sans',sans-serif;
@@ -9,9 +10,7 @@ body{
 ul {
   list-style: none;
 }
-p{
-  margin: 0;
-}
+
 h1,h2,h3,h4,h5{
   margin: 0;
 }

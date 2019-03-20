@@ -1,21 +1,74 @@
 .container-fluid{
   padding: 0;
-  .bg_image{
+  .bg_image1{
     display: flex;
     justify-content: center;
-    align-items: center;
-
     .bg_image_title{
     color: white;
     text-align: center;
+    margin-top: 50px;
     h2{
       padding: 20px 0px;
     }
   }
-    height: 800px;
+    height: 500px;
     background-image: url(../images/bg_image1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-}
+  .paragraph{
+    padding: 25px 0px;
+    p{
+    color: $text-color;
+    text-align: center;
+    }
+  }
+  .row{
+    justify-content: center;
+    .col-sm{
+      max-width: 11%;
+      .bg_image2{
+        display: flex;
+        justify-content: center;
+        height: 260px;
+        width: 315px;
+        background-image: url(../images/travel.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .bg_image3{
+        display: flex;
+        justify-content: center;
+        height: 260px;
+        width: 315px;
+        background-image: url(../images/eat.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .bg_image4{
+        display: flex;
+        justify-content: center;
+        height: 260px;
+        width: 315px;
+        background-image: url(../images/relax.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .bg_image__link{
+        color: turquoise;
+        text-align: center;
+        text-decoration: none;
+        line-height: 260px;
+        span{
+          background: white;
+          padding: 14px;
+          }
+        }
+      }
+    }
+
+  }

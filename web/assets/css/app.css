@@ -9631,25 +9631,79 @@ a.text-dark:hover, a.text-dark:focus {
 .container-fluid {
   padding: 0;
 }
-.container-fluid .bg_image {
+.container-fluid .bg_image1 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 800px;
+  height: 500px;
   background-image: url(../images/bg_image1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.container-fluid .bg_image .bg_image_title {
+.container-fluid .bg_image1 .bg_image_title {
   color: white;
   text-align: center;
+  margin-top: 50px;
 }
-.container-fluid .bg_image .bg_image_title h2 {
+.container-fluid .bg_image1 .bg_image_title h2 {
   padding: 20px 0px;
+}
+.container-fluid .paragraph {
+  padding: 25px 0px;
+}
+.container-fluid .paragraph p {
+  color: #80898e;
+  text-align: center;
+}
+.container-fluid .row {
+  justify-content: center;
+}
+.container-fluid .row .col-sm {
+  max-width: 11%;
+}
+.container-fluid .row .col-sm .bg_image2 {
+  display: flex;
+  justify-content: center;
+  height: 260px;
+  width: 315px;
+  background-image: url(../images/travel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container-fluid .row .col-sm .bg_image3 {
+  display: flex;
+  justify-content: center;
+  height: 260px;
+  width: 315px;
+  background-image: url(../images/eat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container-fluid .row .col-sm .bg_image4 {
+  display: flex;
+  justify-content: center;
+  height: 260px;
+  width: 315px;
+  background-image: url(../images/relax.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container-fluid .row .col-sm .bg_image__link {
+  color: turquoise;
+  text-align: center;
+  text-decoration: none;
+  line-height: 260px;
+}
+.container-fluid .row .col-sm .bg_image__link span {
+  background: white;
+  padding: 14px;
 }
 
 body {
+  overflow-y: auto;
   margin: 0;
   background: white;
   font: normal normal normal 13px/1.4em 'open sans',sans-serif;
@@ -9657,10 +9711,6 @@ body {
 
 ul {
   list-style: none;
-}
-
-p {
-  margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
