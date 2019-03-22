@@ -9638,12 +9638,12 @@ a.text-dark:hover, a.text-dark:focus {
   background-image: url(../images/bg_image1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 110%;
 }
 .container-fluid .bg_image1 .bg_image_title {
   color: white;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 180px;
 }
 .container-fluid .bg_image1 .bg_image_title h2 {
   padding: 20px 0px;
@@ -9657,11 +9657,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .container-fluid .row {
   justify-content: center;
+  padding-bottom: 40px;
 }
-.container-fluid .row .col-sm {
-  max-width: 11%;
+.container-fluid .row .col-md-4 {
+  max-width: 350px;
 }
-.container-fluid .row .col-sm .bg_image2 {
+.container-fluid .row .col-md-4 .bg_image2 {
   display: flex;
   justify-content: center;
   height: 260px;
@@ -9671,7 +9672,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.container-fluid .row .col-sm .bg_image3 {
+.container-fluid .row .col-md-4 .bg_image3 {
   display: flex;
   justify-content: center;
   height: 260px;
@@ -9681,7 +9682,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.container-fluid .row .col-sm .bg_image4 {
+.container-fluid .row .col-md-4 .bg_image4 {
   display: flex;
   justify-content: center;
   height: 260px;
@@ -9691,19 +9692,91 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.container-fluid .row .col-sm .bg_image__link {
+.container-fluid .row .col-md-4 .bg_image__link {
   color: turquoise;
   text-align: center;
   text-decoration: none;
   line-height: 260px;
 }
-.container-fluid .row .col-sm .bg_image__link span {
+.container-fluid .row .col-md-4 .bg_image__link span {
   background: white;
   padding: 14px;
 }
 
+.jumbotron {
+  display: flex;
+  justify-content: space-evenly;
+  height: 158px;
+  background: #D3D3D3;
+}
+.jumbotron .vertical_line {
+  border-left: 2px solid gray;
+  height: 40px;
+}
+.jumbotron .travel_blog, .jumbotron .world_travel {
+  display: grid;
+}
+.jumbotron .plane_tour svg {
+  margin-left: 40px;
+}
+.jumbotron .skycloud svg {
+  margin-left: 57px;
+}
+
+.post {
+  width: 900px;
+  height: 500px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.post .bg_image {
+  height: 100%;
+  background-image: url(../images/bg_image5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.post .bg_image_description {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 23px 47px;
+  display: flex;
+}
+.post .bg_image_description .user_image svg {
+  fill: darkgray;
+  height: 53px;
+  width: 57px;
+}
+.post .bg_image_description .user-role {
+  display: inline-flex;
+  margin: 0px 0px;
+  padding: 8px 0px;
+  height: 25px;
+}
+.post .bg_image_description .user-role svg {
+  height: 17px;
+  width: 15px;
+}
+.post .bg_image_info {
+  padding: 3px 47px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.post .bg_image_info span {
+  font-size: smaller;
+}
+.post .bg_image_info .comment_link {
+  margin-left: 15px;
+  font-size: small;
+  text-decoration: none;
+  color: #80898e;
+}
+.post .bg_image_info .like-heart.active {
+  fill: red;
+}
+
 body {
-  overflow-y: auto;
   margin: 0;
   background: white;
   font: normal normal normal 13px/1.4em 'open sans',sans-serif;

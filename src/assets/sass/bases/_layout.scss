@@ -6,7 +6,7 @@
     .bg_image_title{
     color: white;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 180px;
     h2{
       padding: 20px 0px;
     }
@@ -15,7 +15,7 @@
     background-image: url(../images/bg_image1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 110%;
   }
   .paragraph{
     padding: 25px 0px;
@@ -26,8 +26,9 @@
   }
   .row{
     justify-content: center;
-    .col-sm{
-      max-width: 11%;
+    padding-bottom: 40px;
+    .col-md-4{
+      max-width: 350px;
       .bg_image2{
         display: flex;
         justify-content: center;
@@ -72,3 +73,82 @@
     }
 
   }
+.jumbotron{
+  display: flex;
+  justify-content: space-evenly;
+  height: 158px;
+  background: $bg-color;
+  .vertical_line{
+    border-left: 2px solid gray;
+    height: 40px;
+  }
+  .travel_blog, .world_travel{
+    display: grid;
+  }
+  .plane_tour{
+    svg{
+      margin-left: 40px;
+    }
+  }
+  .skycloud{
+    svg{
+      margin-left: 57px;
+    }
+  }
+}
+.post{
+  width: 900px;
+  height: 500px;
+  justify-content: center;
+  margin: 0 auto;
+  .bg_image{
+    height: 100%;
+    background-image: url(../images/bg_image5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .bg_image_description{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 23px 47px;
+    display: flex;
+    .user_image{
+      svg{
+        fill: darkgray;
+        height: 53px;
+        width: 57px;
+      }
+    }
+    .user-role{
+      display: inline-flex;
+      margin: 0px 0px;
+      padding: 8px 0px;
+      height: 25px;
+      svg{
+        height: 17px;
+        width: 15px;
+      }
+    }
+  }
+  .bg_image_info{
+    padding: 3px 47px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    span{
+      font-size: smaller;
+    }
+    .comment_link{
+      margin-left: 15px;
+      font-size: small;
+      text-decoration: none;
+      color: $text-color;
+    }
+    .like-heart{
+      &.active{
+        fill: red;
+      }
+    }
+  }
+}
