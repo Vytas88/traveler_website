@@ -145,10 +145,14 @@
       text-decoration: none;
       color: $text-color;
     }
-    .like-heart{
-      &.active{
-        fill: red;
-      }
-    }
+
+
   }
+
+}
+.like-heart--active{
+  svg{
+    fill: red;
+  }
+
 }

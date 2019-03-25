@@ -9772,7 +9772,8 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
   color: #80898e;
 }
-.post .bg_image_info .like-heart.active {
+
+.like-heart--active svg {
   fill: red;
 }
 
