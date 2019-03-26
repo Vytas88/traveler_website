@@ -9724,8 +9724,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .post {
-  width: 900px;
-  height: 500px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -9763,10 +9761,11 @@ a.text-dark:hover, a.text-dark:focus {
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
+.post .bg_image_info__footer {
+  display: flex;
+}
 .post .bg_image_info span {
   font-size: smaller;
-}
-.post .bg_image_info .comment_link {
   margin-left: 15px;
   font-size: small;
   text-decoration: none;

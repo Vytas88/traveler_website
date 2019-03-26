@@ -97,8 +97,6 @@
   }
 }
 .post{
-  width: 900px;
-  height: 500px;
   justify-content: center;
   margin: 0 auto;
   .bg_image{
@@ -136,17 +134,16 @@
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+    &__footer{
+      display: flex;
+    }
     span{
       font-size: smaller;
-    }
-    .comment_link{
       margin-left: 15px;
       font-size: small;
       text-decoration: none;
       color: $text-color;
     }
-
-
   }
 
 }
