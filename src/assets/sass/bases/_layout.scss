@@ -96,10 +96,17 @@
     }
   }
 }
+.bg-image{
+  padding: 0;
+}
 .post{
   justify-content: center;
   margin: 0 auto;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
   .bg_image{
+    padding: 0;
     height: 100%;
     background-image: url(../images/bg_image5.png);
     background-size: cover;
@@ -107,8 +114,6 @@
     background-size: 100% 100%;
   }
   .bg_image_description{
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
     padding: 23px 47px;
     display: flex;
     .user_image{
@@ -129,14 +134,8 @@
       }
     }
   }
-  .bg_image_info{
-    padding: 3px 47px;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    &__footer{
+  .bg_image_info__footer{
       display: flex;
-    }
     span{
       font-size: smaller;
       margin-left: 15px;

@@ -1,44 +1,65 @@
-.topbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    .nav-bar{
-        height: $nav-height;
-        background: $bg-color;
-        position: relative;
-        &--left{
-            width: $nav-left-width;
-            text-align: center;
-            float: left;
-        }
-        &--right{
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-            justify-content: center;
-            // width: $nav-right-width;
-
-        }
-        &__lists{
-            display: flex;
-            justify-content: space-evenly;
-            list-style: none;
-            line-height: $line-height;
-            li{
-              margin: 0px 8px;
-            }
-
-            &__link{
-                text-decoration: none;
-                color: $text-color;
-                svg{
-                }
-            }
-          }
-        }
+.navbar{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background: $bg-color;
+  z-index: 999;
+  .mobile-btn{
+    fill: turquoise;
+  }
+  .navbar--left{
+    .navbar-items{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .nav-item{
+      a{
+        color: $text-color;
       }
+
+    }
+    &--open{
+      display: block;
+      top: 0;
+      width: 100%;
+      background: turquoise;
+      right: 0px;
+      height: 100%;
+      position: fixed;
+      overflow: scroll;
+      z-index: 999;
+      transition: $transition;
+    }
+  }
+  .navbar--right{
+    .nav-bar__lists{
+      display: flex;
+      justify-content: space-evenly;
+      line-height: $line-height;
+      li{
+        margin: 0px 8px;
+      }
+      .nav-bar__lists__link{
+        text-decoration: none;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .navbar{
+    flex-direction: row-reverse;
+  }
+  .navbar--left{
+    display: none;
+    right: -250px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .mobile-btn{
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+  }
+}

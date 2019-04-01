@@ -14,3 +14,7 @@ $(function(){
 //      $('#sidenav-right').toggleClass('sidenav-right--open');
  })
 })
+
+$('#mobile-btn').on('click', function(){
+   $('#navbar--left').toggleClass('navbar--left--open');
+ })

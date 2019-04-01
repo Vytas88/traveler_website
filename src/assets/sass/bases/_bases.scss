@@ -1,10 +1,12 @@
 @import 'variables.scss';
 @import 'icons.scss';
 @import 'layout.scss';
+html{
+}
 body{
   margin: 0;
   background: $default-bg;
-  font: normal normal normal 13px/1.4em 'open sans',sans-serif;
+  font: normal normal normal 13px/1.4em 'open sans',sans-serif !important;
 }
 ul {
   list-style: none;
