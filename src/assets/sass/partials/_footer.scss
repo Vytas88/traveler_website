@@ -1,0 +1,82 @@
+.footer-social-icons{
+  margin-top: 20px;
+  text-align: center;
+  .row{
+    padding: 16px 0px;
+    background-color: #00aca8;
+    .col-4{
+      svg{
+        color: white;
+      }
+    }
+  }
+}
+.footer-images{
+  .row{
+    .col-2{
+      min-width: 20%;
+      padding: 0;
+      .on-hover-info{
+        opacity: 0;
+        background-color:rgba(0, 0, 0, 0.5);
+        color: white;
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        top: 0;
+        transition: 0.3s ease all;
+        .on-hover-info-content{
+          height: 100%;
+          display: flex;
+          svg{
+            fill: white;
+          }
+        }
+      }
+      .on-hover-info:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+      .first-image{
+        position: relative;
+        background-image: url(../images/computer-coffee.jpg);
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .second-image{
+        position: relative;
+        background-image: url(../images/croissant-strawberries.jpeg);
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .third-image{
+        position: relative;
+        background-image: url(../images/nachos.jpg);
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .fourth-image{
+        position: relative;
+        background-image: url(../images/palms.jpg);
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .fifth-image{
+        position: relative;
+        background-image: url(../images/gin-cocktails.jpg);
+        height: 200px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

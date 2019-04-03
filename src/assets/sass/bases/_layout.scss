@@ -1,34 +1,42 @@
-.container-fluid{
+.bg_image{
   padding: 0;
+
   .bg_image1{
-    display: flex;
+    position: relative;
     justify-content: center;
-    .bg_image_title{
-    color: white;
-    text-align: center;
-    margin-top: 180px;
-    h2{
-      padding: 20px 0px;
-    }
-  }
     height: 500px;
+    top: 85px;
     background-image: url(../images/bg_image1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 110%;
+    margin-bottom: 110px;
   }
-  .paragraph{
-    padding: 25px 0px;
-    p{
-    color: $text-color;
-    text-align: center;
+  .bg_image_title{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    h2{
+    padding: 20px 0px;
     }
   }
+}
+.paragraph{
+  padding: 20px 60px;
+  p{
+  color: $text-color;
+  text-align: center;
+  }
+}
+.bg_links{
   .row{
     justify-content: center;
     padding-bottom: 40px;
     .col-md-4{
       max-width: 350px;
+      margin-top: 20px;
       .bg_image2{
         display: flex;
         justify-content: center;
@@ -71,16 +79,19 @@
         }
       }
     }
+}
 
-  }
-.jumbotron{
+
+.as_featured_in{
   display: flex;
   justify-content: space-evenly;
-  height: 158px;
+  height: auto;
   background: $bg-color;
+  padding: 28px 0px;
+  flex-flow: wrap;
   .vertical_line{
     border-left: 2px solid gray;
-    height: 40px;
+    height: 60px;
   }
   .travel_blog, .world_travel{
     display: grid;
@@ -96,8 +107,11 @@
     }
   }
 }
-.bg-image{
-  padding: 0;
+.new_image{
+  margin-top: 40px;
+  .bg-image{
+    padding: 0;
+  }
 }
 .post{
   justify-content: center;
@@ -136,13 +150,14 @@
   }
   .bg_image_info__footer{
       display: flex;
-    span{
-      font-size: smaller;
-      margin-left: 15px;
-      font-size: small;
+      span{
+      font-size: 11px;
       text-decoration: none;
       color: $text-color;
-    }
+      }
+      .like-heart{
+        text-align: right;
+      }
   }
 
 }
@@ -150,5 +165,4 @@
   svg{
     fill: red;
   }
-
 }
