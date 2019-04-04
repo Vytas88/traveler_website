@@ -3,7 +3,7 @@
   text-align: center;
   .row{
     padding: 16px 0px;
-    background-color: #00aca8;
+    background-color: $custom-bg;
     .col-4{
       svg{
         color: white;
@@ -13,6 +13,8 @@
 }
 .footer-images{
   .row{
+    display: flex;
+    flex-flow: wrap;
     .col-2{
       min-width: 20%;
       padding: 0;
@@ -43,7 +45,8 @@
         height: 200px;
         width: auto;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
       }
       .second-image{
         position: relative;
@@ -51,7 +54,8 @@
         height: 200px;
         width: auto;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
       }
       .third-image{
         position: relative;
@@ -59,7 +63,8 @@
         height: 200px;
         width: auto;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
       }
       .fourth-image{
         position: relative;
@@ -67,7 +72,8 @@
         height: 200px;
         width: auto;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
       }
       .fifth-image{
         position: relative;
@@ -75,8 +81,70 @@
         height: 200px;
         width: auto;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
       }
     }
   }
 }
+.about-me{
+  background-color: #7d7a7a;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  .row{
+    display: flex;
+    flex-flow: wrap;
+    .profile-picture{
+      background-image: url(../images/photographer.jpg);
+      height: 135px;
+      width: auto;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+    }
+    .paragraph{
+      padding: 0px 35px;
+      p, h3{
+        color: white;
+        margin-bottom: 19px;
+      }
+      a{
+        color: #8DD6DA;
+      }
+    }
+    .join-me{
+      display: inline-grid;
+      padding-left: 50px;
+      h3{
+        color: white;
+        margin-bottom: 23px;
+      }
+      input{
+        margin-bottom: 11px;
+      }
+      button{
+        color: white;
+        background-color: $custom-bg;
+        padding: 6px 0px;
+        border: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-images .row .col-2{
+    min-width: 100%;
+  }
+  .about-me .row .col-2{
+    min-width: 100%;
+  }
+  .about-me .row .col-5{
+    min-width: 100%;
+  }
+  .about-me .row .profile-picture{
+    max-width: 50%;
+  }
+  .about-me .row .paragraph{
+    padding: 20px 35px;
+  }
+  }

@@ -9836,6 +9836,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   background: lightgray;
   padding: 0;
+  box-shadow: inset 0 0 1px #000014;
 }
 
 .mobile-nav {
@@ -9912,6 +9913,10 @@ h1, h2, h3, h4, h5 {
   color: white;
 }
 
+.footer-images .row {
+  display: flex;
+  flex-flow: wrap;
+}
 .footer-images .row .col-2 {
   min-width: 20%;
   padding: 0;
@@ -9976,4 +9981,70 @@ h1, h2, h3, h4, h5 {
   width: auto;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.about-me {
+  background-color: #7d7a7a;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.about-me .row {
+  display: flex;
+  flex-flow: wrap;
+}
+.about-me .row .profile-picture {
+  background-image: url(../images/photographer.jpg);
+  height: 135px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.about-me .row .paragraph {
+  padding: 0px 35px;
+}
+.about-me .row .paragraph p, .about-me .row .paragraph h3 {
+  color: white;
+  margin-bottom: 19px;
+}
+.about-me .row .paragraph a {
+  color: #8DD6DA;
+}
+.about-me .row .join-me {
+  display: inline-grid;
+  padding-left: 50px;
+}
+.about-me .row .join-me h3 {
+  color: white;
+  margin-bottom: 23px;
+}
+.about-me .row .join-me input {
+  margin-bottom: 11px;
+}
+.about-me .row .join-me button {
+  color: white;
+  background-color: #00aca8;
+  padding: 6px 0px;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-images .row .col-2 {
+    min-width: 100%;
+  }
+
+  .about-me .row .col-2 {
+    min-width: 100%;
+  }
+
+  .about-me .row .col-5 {
+    min-width: 100%;
+  }
+
+  .about-me .row .profile-picture {
+    max-width: 50%;
+  }
+
+  .about-me .row .paragraph {
+    padding: 20px 35px;
+  }
 }
