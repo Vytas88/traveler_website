@@ -1,0 +1,72 @@
+.login-close-btn{
+  position: fixed;
+  top: 60px;
+  right: 60px;
+}
+
+.container{
+  margin-top: 84px;
+  .row{
+    .col-4{
+      .login{
+        .login_title{
+          text-align: center;
+          h1{
+            margin-bottom: 18px;
+          }
+          .login_link{
+            display: flex;
+            justify-content: center;
+            a{
+              margin-left: 4px;
+              color: $custom-bg;
+              text-decoration: none;
+            }
+          }
+          .login_form{
+            .login__form__item{
+              // width: 100%; //NES jis turi but responsive
+              // height: $input-height;
+              // border: $border;
+              // border-radius: $border-radius;
+              // background: #fff;
+              // color: $mid-gray;
+              // padding-left: 18px;
+              // &:focus{
+              // outline: none;
+              // border-color: $default-bg;
+              // box-shadow: 0 0 0 1px $default-bg;
+              // }
+              // &:valid ~ label{ //kai ives kazka i inputa uzsides stilius ant input
+              // top: -7px;
+              // font-size: 12px;
+              // padding: 0 6px;
+              // }
+              // &:focus ~ label{ //kai paspaustas stilius prisides
+              // top: -7px;
+              // font-size: 12px;
+              // padding: 0 6px;
+              // }
+              position: relative;
+              @include default-input();
+            }
+            .login__form__button{
+              margin-top: 18px;
+              .button--full-width{
+                width: 100%;
+                padding: 12px 0px;
+                color: white;
+                background-color: $custom-bg;
+                border: none;
+                border-radius: 1px;
+                &:hover{
+                  filter: brightness(110%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

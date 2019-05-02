@@ -46,6 +46,7 @@
   }
 }
 .social-icons{
+  height: $nav-height;
   .nav-bar__lists{
     display: flex;
     line-height: $line-height;
@@ -53,23 +54,28 @@
     margin: 0px 20px;
     }
     .nav-bar__lists__link{
+      line-height: $line-height;
       text-decoration: none;
-      color: $text-color;
+      color: $desktop-navbar-color;
       }
     }
   }
 .navbar{
   width: calc(75% - 0px);
-  height: 85px;
+  height: $nav-height;
   display: inline-block;
   text-align: left;
   line-height: $line-height;
   padding: 0;
   .desktop-navbar-items{
+    height: $nav-height;
     display: flex;
     .nav-link{
+      padding: 0px 17px;
+      font-size: 13px;
       text-decoration: none;
-      color: $text-color;
+      color: $desktop-navbar-color;
+      line-height: $line-height;
     }
   }
 }

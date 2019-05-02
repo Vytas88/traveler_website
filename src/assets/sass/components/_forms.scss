@@ -1,0 +1,49 @@
+@mixin default-label($background: #fff, $selector: '.label-inside'){
+  #{$selector}{
+      position: absolute;
+      background: $background;
+      font-size: 12px;
+      color: black;
+      top: 31px;
+      left: 0;
+      line-height: 24px;
+      margin: 0;
+      transition: .2s ease all;
+      pointer-events: none;
+  }
+}
+
+@mixin default-input($selector: "input", $background: #fff, $height: $input-height){ //pazymim visus inputus kurie nera checkboxai
+  #{$selector}{
+    width: 100%; //NES jis turi but responsive
+    height: $height;
+    background: #fff;
+    margin-bottom: 12px;
+    border: 1px solid white;
+    border-bottom: 1px solid lightgray;
+    &:focus{
+      outline: none;
+      border-bottom-color: $custom-bg;
+    }
+    &:hover{
+      border-bottom: 1px solid black;
+    }
+    &:active{
+      border-bottom: 1px solid $custom-bg;
+    }
+    &:valid ~ label{ //kai ives kazka i inputa uzsides stilius ant input
+      top: -7px;
+      font-size: 9px;
+      padding: 0;
+    }
+    &:focus ~ label{ //kai paspaustas stilius prisides
+      top: -7px;
+      font-size: 9px;
+      padding: 0;
+    }
+  }
+  @include default-label($background);
+}
+
+
+//label ir input sujungiam, kad backgroundas visur keistusi, uztektu vienoj vietoj pakeisti
